@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="FruitLoops1.cs" />
     <Compile Include="FruitLoops2.cs" />
+    <Compile Include="Login.cs" />
     <Compile Include="MadLib.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
