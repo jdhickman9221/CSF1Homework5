@@ -39,10 +39,10 @@ namespace CSF1Homework5
                 {
                     case ConsoleKey.F:
                         Console.WriteLine($"{enterTemp}{fahString}");
-                        double cel = double.Parse(Console.ReadLine().Trim());
-                        double fah = (cel * 1.8) + 32;
+                        double fah2 = double.Parse(Console.ReadLine());
+                        double cel2 = (fah2 - 32) / 1.8;
                         Console.ReadLine();
-                        Console.WriteLine($"Great, here is your conversion from Celsius to Fahrenheit! F:{fah}");
+                        Console.WriteLine($"Great, here is your conversion from Fahrenheit to Celsius! C:{cel2}");
                         Console.ReadLine();
                         Console.WriteLine("Would you like to start from beginning? Y/N");
                         ConsoleKey restart = Console.ReadKey().Key;
@@ -56,17 +56,16 @@ namespace CSF1Homework5
                                 repeat = true;
 
                                 break;
-                                
 
                         }
                         break;
-
+                        
 
                     case ConsoleKey.C:
                         Console.WriteLine($"{enterTemp}{celString}");
-                        double fah2 = double.Parse(Console.ReadLine());
-                        double cel2 = (fah2 - 32) / 1.8;
-                        Console.WriteLine($"Great, here is your conversion from Fahrenheit to Celsius! C:{cel2}");
+                        double cel = double.Parse(Console.ReadLine().Trim());
+                        double fah = (cel * 1.8) + 32;
+                        Console.WriteLine($"Great, here is your conversion from Celsius to Fahrenheit! F:{fah}");
                         Console.ReadLine();
                         Console.WriteLine("Would you like to start from beginning? Y/N");
                         ConsoleKey restart2 = Console.ReadKey().Key;

@@ -72,8 +72,7 @@ namespace CSF1Homework5
                     $"And so, like any good {adjective} {noun2} the {noun} decided to go {verb2}.\n" +
                     $"But sometimes the universe a {adjective2} mistress,\n" +
                     $"and destiny {adverb} called.\n" +
-                    $"After that,\n" +
-                    $"the {verb} exclaimed {exclaimation}, and they heard it all the way in {cityName}!\n" +
+                    $"After that, the {verb} exclaimed {exclaimation}, and they heard it all the way in {cityName}!\n" +
                     $"And the {verb} vowed not to return until {timeOfDay}.");
 
 
