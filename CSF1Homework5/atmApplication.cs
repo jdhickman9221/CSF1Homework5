@@ -10,7 +10,7 @@ namespace CSF1Homework5
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("ATM Application");
+            //Console.WriteLine("ATM Application");
             Console.Title = "ATM Application";
             //orginal values
             #region//original set up value
@@ -78,10 +78,10 @@ namespace CSF1Homework5
                                 Console.WriteLine("You are now locked out. Please contact us by phone or wait 24hrs.");                                
                                 if(attempts < 0)//19. If they try after lockout, then the following text appears.
                                 {
-                                    Console.Clear();
-                                    Console.WriteLine("We have taken your facial photo and have notified the\n" +
-                                        " local police department. Unauthorized attempts");
-                                    Console.ReadLine();
+                                 Console.Clear();
+                                 Console.WriteLine("We have taken your facial photo and have notified the\n" +
+                                 " local police department. Unauthorized attempts");
+                                 Console.ReadLine();
                                 }//endIf3
                                 }//endIf4
                             
@@ -90,15 +90,15 @@ namespace CSF1Homework5
                 }//endIf1
                             else
                             {
-                                Console.WriteLine($"{denied}");
+                             Console.WriteLine($"{denied}");
                             }//endElse1
             }//endWhile1
             Console.Clear();
-                decimal balance = 1000.00m;
-                bool repeat = true;
-                string exitMessage = "Thanks for choosing CodeBank ATM, have a great day!";
+            decimal balance = 1000.00m;
+            bool repeat = true;
+            string exitMessage = "Thanks for choosing CodeBank ATM, have a great day!";
             string anotherTransaction = "Would you like to make another transaction?\n" +
-                " Y/N";
+            " Y/N";
 
 
 
@@ -115,9 +115,9 @@ namespace CSF1Homework5
                     switch (userChoice)
                     {
                         case ConsoleKey.D:
-                            Console.WriteLine("Enter deposit amount: $");
-                            balance += decimal.Parse(Console.ReadLine());
-                            Console.WriteLine($"\nDeposit accepted. Your current balance is {balance:c}");
+                        Console.WriteLine("Enter deposit amount: $");
+                        balance += decimal.Parse(Console.ReadLine());
+                        Console.WriteLine($"\nDeposit accepted. Your current balance is {balance:c}");
                         Console.ReadLine();
                         Console.WriteLine($"{anotherTransaction}");
                         ConsoleKey userChoice2 = Console.ReadKey().Key;
@@ -127,27 +127,27 @@ namespace CSF1Homework5
                                         case ConsoleKey.Y:                                
                                         break;
                                         case ConsoleKey.N:
-                                            repeat = false;
-                                            break;
+                                        repeat = false;
+                                        break;
                                     }//endSwitch2
                         break;
 
                         case ConsoleKey.W:
-                            Console.WriteLine("Enter witherdraw amount: $");
-                            balance -= decimal.Parse(Console.ReadLine());
-                            Console.WriteLine($"\nWithdraw accepted. Your current balance is {balance:c}");
+                        Console.WriteLine("Enter witherdraw amount: $");
+                        balance -= decimal.Parse(Console.ReadLine());
+                        Console.WriteLine($"\nWithdraw accepted. Your current balance is {balance:c}");
                         Console.ReadLine();
                         Console.WriteLine($"{anotherTransaction}");
                         ConsoleKey userChoice3 = Console.ReadKey().Key;
                         Console.Clear();
                                     switch (userChoice3)
                                     {
-                                        case ConsoleKey.Y:
-                                        Console.Clear();
-                                        break;
-                                        case ConsoleKey.N:
-                                        repeat = false;
-                                        break;
+                                         case ConsoleKey.Y:
+                                         Console.Clear();
+                                         break;
+                                         case ConsoleKey.N:
+                                         repeat = false;
+                                         break;
                                     }//endSwitch3
                         break;
 
@@ -172,7 +172,7 @@ namespace CSF1Homework5
                         repeat = false;
                         break;
 
-                        default:
+                        //default:
                         Console.Clear();
                         Console.WriteLine("That wasn't an option. Please try again.");
                         Console.ReadLine();

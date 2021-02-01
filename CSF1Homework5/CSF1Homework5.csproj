@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>CSF1Homework5.TempConverter</StartupObject>
+    <StartupObject>CSF1Homework5.atmApplication</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
